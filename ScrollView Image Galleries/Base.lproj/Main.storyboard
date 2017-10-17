@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xDk-gT-ZLX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.25" maximumZoomScale="3" translatesAutoresizingMaskIntoConstraints="NO" id="BDJ-VB-deO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" image="Lighthouse-in-Field" translatesAutoresizingMaskIntoConstraints="NO" id="Qao-96-ApI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qao-96-ApI" firstAttribute="centerY" secondItem="BDJ-VB-deO" secondAttribute="centerY" id="EeJ-6h-9qo"/>
+                                    <constraint firstItem="Qao-96-ApI" firstAttribute="top" secondItem="BDJ-VB-deO" secondAttribute="top" id="GaJ-iY-Mo7"/>
+                                    <constraint firstItem="Qao-96-ApI" firstAttribute="leading" secondItem="BDJ-VB-deO" secondAttribute="leading" id="c4l-r2-3Sz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qao-96-ApI" secondAttribute="trailing" id="dWV-3O-WtW"/>
+                                    <constraint firstItem="Qao-96-ApI" firstAttribute="centerX" secondItem="BDJ-VB-deO" secondAttribute="centerX" id="jac-va-5Qz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qao-96-ApI" secondAttribute="bottom" id="n6o-EB-nL9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BDJ-VB-deO" secondAttribute="trailing" id="AVn-SW-lOb"/>
+                            <constraint firstItem="BDJ-VB-deO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EQp-S2-eYf"/>
+                            <constraint firstItem="BDJ-VB-deO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QHB-r5-Bbk"/>
+                            <constraint firstItem="BDJ-VB-deO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sz4-EZ-91W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BDJ-VB-deO" secondAttribute="bottom" id="kiA-Qa-P0Q"/>
+                            <constraint firstItem="BDJ-VB-deO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rI8-lW-B8Z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Qao-96-ApI" id="QN3-eI-XdL"/>
+                        <outlet property="scrollView" destination="BDJ-VB-deO" id="ZyW-ot-tff"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2108" y="-523.088455772114"/>
+        </scene>
+        <!--Image Gallery View View Controller-->
+        <scene sceneID="O6e-Fd-wRd">
+            <objects>
+                <viewController id="j5U-FJ-E1x" customClass="ImageGalleryViewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qK4-gX-t9V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xjd-9i-lZR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="if1-fm-SHb" firstAttribute="bottom" secondItem="Xjd-9i-lZR" secondAttribute="bottom" id="Ipg-Wa-lEc"/>
+                            <constraint firstItem="Xjd-9i-lZR" firstAttribute="top" secondItem="if1-fm-SHb" secondAttribute="top" id="Jub-dN-pkr"/>
+                            <constraint firstItem="if1-fm-SHb" firstAttribute="trailing" secondItem="Xjd-9i-lZR" secondAttribute="trailing" id="bu9-tL-Qix"/>
+                            <constraint firstItem="Xjd-9i-lZR" firstAttribute="leading" secondItem="if1-fm-SHb" secondAttribute="leading" id="mRA-TL-tyn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="if1-fm-SHb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ccY-d5-XAO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Xjd-9i-lZR" id="850-pe-dEL"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="detailedView" id="Jd5-GP-kWq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7Q-O6-ZEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207.2" y="-523.088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F7e-Cj-CPH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xDk-gT-ZLX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oLq-sh-e8n">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j5U-FJ-E1x" kind="relationship" relationship="rootViewController" id="ZdS-wc-aLZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyU-po-vx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="-523"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Lighthouse-in-Field" width="960" height="540"/>
+    </resources>
 </document>

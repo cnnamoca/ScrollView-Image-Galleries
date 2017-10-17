@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ImageGalleryViewViewController.h
 //  ScrollView Image Galleries
 //
 //  Created by Carlo Namoca on 2017-10-16.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (nonatomic) UIImage *myImage;
-
+@interface ImageGalleryViewViewController : UIViewController
 
 @end
-

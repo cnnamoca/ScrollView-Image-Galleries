@@ -15,6 +15,7 @@
 		E60454411F954FE000D95136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E60454401F954FE000D95136 /* main.m */; };
 		E604544B1F954FE000D95136 /* ScrollView_Image_GalleriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E604544A1F954FE000D95136 /* ScrollView_Image_GalleriesTests.m */; };
 		E60454561F954FE000D95136 /* ScrollView_Image_GalleriesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E60454551F954FE000D95136 /* ScrollView_Image_GalleriesUITests.m */; };
+		E60454651F95770400D95136 /* ImageGalleryViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60454641F95770400D95136 /* ImageGalleryViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E60454511F954FE000D95136 /* ScrollView Image GalleriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ScrollView Image GalleriesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60454551F954FE000D95136 /* ScrollView_Image_GalleriesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView_Image_GalleriesUITests.m; sourceTree = "<group>"; };
 		E60454571F954FE000D95136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60454631F95770400D95136 /* ImageGalleryViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageGalleryViewViewController.h; sourceTree = "<group>"; };
+		E60454641F95770400D95136 /* ImageGalleryViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				E60454341F954FE000D95136 /* ViewController.h */,
 				E60454351F954FE000D95136 /* ViewController.m */,
 				E60454371F954FE000D95136 /* Main.storyboard */,
+				E60454631F95770400D95136 /* ImageGalleryViewViewController.h */,
+				E60454641F95770400D95136 /* ImageGalleryViewViewController.m */,
 				E604543A1F954FE000D95136 /* Assets.xcassets */,
 				E604543C1F954FE000D95136 /* LaunchScreen.storyboard */,
 				E604543F1F954FE000D95136 /* Info.plist */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60454651F95770400D95136 /* ImageGalleryViewViewController.m in Sources */,
 				E60454361F954FE000D95136 /* ViewController.m in Sources */,
 				E60454411F954FE000D95136 /* main.m in Sources */,
 				E60454331F954FE000D95136 /* AppDelegate.m in Sources */,
